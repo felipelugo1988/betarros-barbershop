@@ -1,0 +1,123 @@
+body {
+    background-image: url('./images/main-background.jpeg');
+    background-size: cover; /* para ajustar la imagen al tamaño de la ventana */
+    background-repeat: no-repeat; /* para que la imagen no se repita */
+    background-attachment: fixed; /* para que la imagen permanezca fija en su posición */
+    font-size: 15px;
+}
+
+.container-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las celdas de la cuadrícula */
+}
+
+.item-1 {
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(103, 72, 23);
+}
+
+.item-2 {
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    padding: 40px;
+    text-align: center;
+}
+
+.item-3 {
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+/* Aqui comienza la segunda seccion de nav */
+
+.nav-dos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1px;
+}
+
+.item-1n, .item-2n, .item-3n, .item-4n, .item-5n, .item-6n {
+    color: white;
+    padding: 50px;
+    text-align: center;
+    
+}
+
+
+/*Cuadros de dialogo*/
+
+.dialogo-1 {
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    white-space: nowrap;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; /* Ancho del rectángulo */
+    height: 40px; /* Alto del rectángulo */
+    border: 2px solid #000; /* Borde del rectángulo */
+    padding: 10px; /* Espacio entre el texto y el borde del rectángulo */
+}
+
+
+/*Dialogo 2*/
+.dialogo-2 {
+    display: block;
+    font-family: monospace;
+    font-size: 60px;
+    text-align: center;
+    white-space: nowrap;
+    border-right: 4px solid;
+    color: rgb(176, 124, 41);
+    width: 42ch;
+    margin-top: 20px;
+
+    animation: typing 2s steps(20), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent}
+}
+
+
+
+/* Hacer que el diseño sea responsivo */
+@media (max-width: 768px) {
+    .container-nav {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
